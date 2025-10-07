@@ -10,7 +10,7 @@ public class DialogueLines : MonoBehaviour
     public void loadNextLine()
     {
         ++currentLine;
-
+        Debug.Log(timelineDialogues[currentLine] + " " + currentLine);
         dialogueLine.text = timelineDialogues[currentLine];
     }
 }
